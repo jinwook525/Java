@@ -21,11 +21,11 @@ public class 실습2_1정수변수 {
     * 출력은 "정수변수값 = **, 실수변수값 = **"
 
     */
-		Scanner sc = new Scanner(System.in);
-		float num = sc.nextFloat();
-		int dnum;
-		dnum= (int)num;
-		System.out.println("실수변수값 ="+num +", 정수변수값 ="+dnum);
+
+		float fnum = sc.nextFloat();
+		int pnum;
+		pnum= (int)fnum;
+		System.out.println("실수변수값 ="+fnum +", 정수변수값 ="+pnum);
 
 
 
