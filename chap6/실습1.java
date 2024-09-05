@@ -1,7 +1,5 @@
 package chap6;
 
-import chap3.switch문;
-
 class Student {
 	// 필드
 	/*
@@ -82,13 +80,13 @@ public class 실습1 {
 		System.out.println(msg);
 		for (int i = 0; i < s.length; i++) {
 			System.out.println("이름 ="+s[i].getName()+",나이 ="+s[i].getAge());
-			for (int j=0; j<=s[i].getSubject().length; j++ ) {
+			for (int j=0; j<s[i].getSubject().length; j++ ) {
 				
-				System.out.println(s[i].getSubject()[j]);
+				System.out.println(s[i].getSubject()[j]+"="+s[i].getScores()[j]);
 			
 				
 				//System.out.println("과목"+ j+"="+s[i].getSubject+","+"점수"+j+"="+scores[j]);
-			}
+			}System.out.println("-".repeat(20));
 		}
 	}
 	public static Student makeStudent(String name, int age, String[] subjects, int[] scores, int count) {
@@ -108,13 +106,13 @@ public class 실습1 {
 		Student[] students = {
 				makeStudent("홍길동", 21, subjects, new int[]{85, 90, 78, 88, 92}, 5),
 				makeStudent("김유신", 22, subjects, new int[]{75, 80, 85, 90, 95}, 5),
-				//("계백", 23, subjects, new int[]{65, 70, 75, 80, 85}, -1),
-				//("강감찬", 24, subjects, new int[]{95, 92, 88, 84, 91}, -1),
-				//("을지문덕", 25, subjects, new int[]{88, 76, 85, 79, 90}, -1)
+				makeStudent("계백", 23, subjects, new int[]{65, 70, 75, 80, 85}, -1),
+				makeStudent("강감찬", 24, subjects, new int[]{95, 92, 88, 84, 91}, -1),
+				makeStudent("을지문덕", 25, subjects, new int[]{88, 76, 85, 79, 90}, -1)
 		};
 
 		// 학생 정보 출력 (예시)
-		showStudents("홍길동", students);
+		showStudents("학생", students);
 
 	}
 
