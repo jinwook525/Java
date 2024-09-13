@@ -197,7 +197,7 @@ abstract class Customer3 {
 	}
 
 		// 할인율을 계산하는 메서드
-	    abstract double getDiscountRate();
+	abstract double getDiscountRate();
 
 	abstract double applyDiscount(double totalAmount);
 }
